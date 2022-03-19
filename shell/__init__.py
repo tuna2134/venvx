@@ -13,4 +13,7 @@ def main():
     sub = argv[1]
     if sub == "install":
         subprocess.run(["venv/bin/pip", "install"] + argv[1:], stdout=subprocess.PIPE)
-        print("インストール完了！")
+        print("実行完了！")
+    elif sub == "uninstall":
+        subprocess.run(["venv/bin/pip", "uninstall"] + argv[1:], stdout=subprocess.PIPE)
+        print("実行完了！")
