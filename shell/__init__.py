@@ -12,5 +12,5 @@ def main():
     check_venv()
     sub = argv[1]
     if sub == "install":
-        subprocess.run(["venv/bin/pip", "install", argv[1:]], stdout=subprocess.PIPE)
+        subprocess.run(["venv/bin/pip", "install"] + argv[1:], stdout=subprocess.PIPE)
         print("インストール完了！")
