@@ -10,7 +10,7 @@ def check_venv():
 
 def main():
     check_venv()
-    sub = argv[0]
+    sub = argv[1]
     print(sub)
     if sub == "install":
         subprocess.Popen(["venv/bin/pip", "install", argv[1]])
