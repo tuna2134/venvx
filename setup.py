@@ -8,13 +8,6 @@ def _requires_from_file(filename):
   
 packages = []
 
-extras = {
-    "speed": [
-        "ujson>=1.35",
-        "uvloop>=0.5.3"
-    ]
-}
-
 setuptools.setup(
     entry_points={
         "console_scripts": [
