@@ -12,10 +12,10 @@ def main():
     check_venv()
     sub = argv[1]
     if sub == "install":
-        subprocess.run(["venv/bin/pip", "install"] + argv[1:], stdout=subprocess.PIPE)
+        subprocess.run(["./venv/bin/pip", "install"] + argv[1:], stdout=subprocess.PIPE)
         print("実行完了！")
     elif sub == "uninstall":
-        p = subprocess.Popen(["venv/bin/pip", "uninstall"] + argv[1:], stdin=subprocess.PIPE, stdout=subprocess.PIPE)
+        p = subprocess.Popen(["./venv/bin/pip", "uninstall"] + argv[1:], stdin=subprocess.PIPE, stdout=subprocess.PIPE)
         p.stdin.write(b'y')
         p.stdin.close()
         p.wait()
