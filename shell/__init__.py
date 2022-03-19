@@ -4,9 +4,10 @@ from os import path
 
 def check_venv():
     if path.isdir("./venv"):
-        pass
+        print(True)
     else:
         subprocess.Popen(["python3", "-m", "venv", "venv"])
+        print(False)
 
 def main():
     check_venv()
