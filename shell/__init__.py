@@ -16,7 +16,7 @@ def main():
         print("実行完了！")
     elif sub == "uninstall":
         print(argv[1:])
-        p = subprocess.Popen(["./venv/bin/pip", "uninstall"] + argv[1:], stdin=subprocess.PIPE, stdout=subprocess.PIPE)
+        p = subprocess.Popen(["./venv/bin/pip", "uninstall"] + argv[2:], stdin=subprocess.PIPE, stdout=subprocess.PIPE)
         p.stdin.write(b'y')
         p.stdin.close()
         p.wait()
