@@ -1,6 +1,12 @@
 # venvx
 This can easy to use venv
 
+## インストール
+
+```sh
+pip install git+https://github.com/tuna2134/venvx.git
+```
+
 ## リファレンス
 
 ### install
