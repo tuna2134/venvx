@@ -13,5 +13,5 @@ def main():
     sub = argv[1]
     print(sub)
     if sub == "install":
-        subprocess.Popen(["venv/bin/pip", "install", argv[1]])
+        subprocess.Popen(["venv/bin/pip", "install", argv[1:]], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         print("インストール完了！")
