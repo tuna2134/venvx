@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 def _requires_from_file(filename):
     return open(filename, encoding="utf8").read().splitlines()
   
-packages = ["shell"]
+packages = []
 
 extras = {
     "speed": [
