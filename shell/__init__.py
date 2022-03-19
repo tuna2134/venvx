@@ -24,5 +24,4 @@ def main():
         print("実行完了！")
         
     elif sub == "list":
-        subprocess.run(["./venv/bin/pip", "list"] + argv[2:], stdout=subprocess.PIPE)
-        print("実行完了!")
+        subprocess.run(["./venv/bin/pip", "list"] + argv[2:])
