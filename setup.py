@@ -19,7 +19,7 @@ setuptools.setup(
     },
     packages=packages,
     name="venvx",
-    version="0.0.1",
+    version="0.0.2",
     author="DMS",
     author_email="masato190411@gmail.com",
     description="venv wrapper",
