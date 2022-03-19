@@ -17,7 +17,6 @@ setuptools.setup(
     project_urls = {
         "Documentation": "https://tuna2134.github.io/venvx/"
     },
-    extras_require=extras,
     packages=packages,
     name="venvx",
     version="0.0.1",
