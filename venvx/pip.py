@@ -12,7 +12,8 @@ class PipEnv:
         self.pip = f"{projects_dir}/{name}/bin/pip"
         
     def do_pip(self, *args, **kwargs):
-        subprocess.run([self.pip] + list(args),
+        run_list = [self.pip] + list(args)
+        subprocess.run(run_list,
                        stdout=subprocess.PIPE,
                        stderr=subprocess.STDOUT,
                        **kwargs)
