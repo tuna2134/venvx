@@ -11,7 +11,7 @@ packages = ["shell"]
 setuptools.setup(
     entry_points={
         "console_scripts": [
-            "venvx = shell:main"
+            "venvx = venvx:main"
         ]
     },
     project_urls = {
