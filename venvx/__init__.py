@@ -7,7 +7,7 @@ def check_venv():
     if path.isdir("./venv"):
         pass
     else:
-        venv.create("venv", system_site_packages=True, with_pip=True)
+        venv.create("venv", clean=True, with_pip=True)
 
 def main():
     check_venv()
