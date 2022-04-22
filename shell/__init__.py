@@ -1,12 +1,13 @@
 import subprocess
 from sys import argv
+import venv
 from os import path
 
 def check_venv():
     if path.isdir("./venv"):
         pass
     else:
-        subprocess.run(["python3", "-m", "venv", "venv"], stdout=subprocess.PIPE)
+        venv.create("venv", system_site_packages=True, with_pip=True)
 
 def main():
     check_venv()
