@@ -18,9 +18,9 @@ class PipEnv:
                        **kwargs)
             
     def install(self, name, *args):
-        self.do_pip(["install", name] + args)
+        self.do_pip(["install", name] + list(args))
         print("Complete")
         
     def uninstall(self, name, *args):
-        self.do_pip(["uninstall", name, "-y"] + args)
+        self.do_pip(["uninstall", name, "-y"] + list(args))
         print("Complete")
