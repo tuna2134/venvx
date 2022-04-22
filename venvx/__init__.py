@@ -2,6 +2,7 @@ import subprocess
 from sys import argv
 import venv
 from os import path
+from .pip import *
 
 def check_venv():
     if path.isdir("./venv"):
